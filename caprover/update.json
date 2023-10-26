@@ -5,6 +5,11 @@
     "websocketSupport": true,
     "forceSsl": true,
     "containerHttpPort": "8888",
+    "httpAuth": {
+        "user": "$CODA_NOTEBOOK_APP_USERNAME",
+        "passwordHashed": "$CODA_NOTEBOOK_APP_PASSWORD_HASHED",
+        "password": "$CODA_NOTEBOOK_APP_PASSWORD"
+    },
     "envVars": [
         {
             "key": "CODA_AUTH_SERVICE_URL",
